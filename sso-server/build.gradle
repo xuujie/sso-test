@@ -1,0 +1,24 @@
+apply from: "../java.gradle"
+
+apply plugin: "org.springframework.boot"
+apply plugin: "io.spring.dependency-management"
+
+group "com.xujie"
+version "0.1.0"
+
+dependencies {
+
+    compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.boot:spring-boot-starter-thymeleaf"
+    compile "org.springframework.boot:spring-boot-starter-actuator"
+    compile "org.springframework.boot:spring-boot-starter-security"
+    compile "nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:$ultraqThymeleafLayoutVersion"
+
+    compile "org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:$springBootVersion"
+
+    testCompile "junit:junit:$junitVersion"
+    testCompile "org.springframework.boot:spring-boot-starter-test"
+//    testCompile "de.flapdoodle.embed:de.flapdoodle.embed.mongo:$embadedMongoVersion"
+
+    compile "org.springframework.boot:spring-boot-devtools"
+}
