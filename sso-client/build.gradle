@@ -11,6 +11,7 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-web"
     compile "org.springframework.boot:spring-boot-starter-actuator"
     compile "org.springframework.boot:spring-boot-starter-thymeleaf"
+    compile "org.springframework.boot:spring-boot-configuration-processor"
     compile "nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:$ultraqThymeleafLayoutVersion"
 
 
@@ -22,8 +23,8 @@ dependencies {
     compile "org.webjars:webjars-locator-core"
     compile "org.webjars:js-cookie:2.1.0"
 
-    testCompile "junit:junit:$junitVersion"
+//    testCompile "junit:junit:$junitVersion"
     testCompile "org.springframework.boot:spring-boot-starter-test"
 
-    compile "org.springframework.boot:spring-boot-devtools"
+//    compile "org.springframework.boot:spring-boot-devtools"
 }
